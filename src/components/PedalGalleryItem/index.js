@@ -1,13 +1,20 @@
-export default function GalleryItem({ pedal, keysToDisplay }) {
-  const pedalPreview = Object.entries(pedal).filter(([key, value]) => keysToDisplay.includes(key));
-
+import { StyledItem, StyledPedalPreview } from "./PedalGalleryItem.styled";
+import PedalName from "../PedalName";
+import Manufacturer from "../Manufacturer";
+import Category from "../Category";
+import MyComment from "../MyComment";
+import Tags from "../Tags";
+export default function GalleryItem({ pedal }) {
+  
   return (
-    <li>
-      <div>
-        {pedalPreview.map(([key, value]) => (
-          <p key={key}>{`${key}: ${value}`}</p>
-        ))}
-      </div>
-    </li>
+    <StyledItem>
+      <StyledPedalPreview>
+     <PedalName pedalName={pedal.pedalName}/>
+     <Manufacturer manufacturer={pedal.manufacturer}/>
+     <Category category={pedal.category}/>
+     <MyComment myComment={pedal.myComment}/>
+     <Tags tags={pedal.tags}/>
+      </StyledPedalPreview>
+    </StyledItem>
   );
 }

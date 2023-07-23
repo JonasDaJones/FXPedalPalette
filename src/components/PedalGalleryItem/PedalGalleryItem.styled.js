@@ -1,13 +1,16 @@
-import { pedals } from "../../lib/pedalfx-data";
-export default function GalleryItem({ pedal, keysToDisplay }) {
-    const pedalPreview = Object.entries(pedal).filter(([key, value]) => keysToDisplay.includes(key));
-    return (
-        <li>
-            <div>
-                {pedalPreview.map(([key, value]) => (
-                    <p key={key}>{`${key}: ${value}`}</p>
-                ))}
-            </div>
-        </li>
-    )
-}
+import styled from "styled-components";
+export const StyledItem = styled.li`
+border: 2px solid darkslategray;
+border-radius: 5px;
+margin-bottom: 2em;
+5px 5px 15px 5px var(--dark);`;
+
+export const StyledPedalPreview = styled.div`
+display: grid;
+grid-template-areas:
+"pedalName . category"
+"manufacturer . category"
+"myComment myComment myComment"
+"image image image"
+"tags tags tags";
+`;

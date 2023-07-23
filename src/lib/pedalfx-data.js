@@ -1,7 +1,7 @@
 export let pedals = [
   {
     id: "43d53d5b-4d25-4bc0-af21-61fb27537013",
-    name: "Spacetime",
+    pedalName: "Spacetime",
     manufacturer: "Vahlbruch",
     madeIn: "Germany",
     category: ["delay"],
@@ -35,7 +35,7 @@ export let pedals = [
   },
   {
     id: "9a9d95d7-2063-44f9-8e4a-ea363f0089f6",
-    name: "DELTA_II",
+    pedalName: "DELTA_II",
     manufacturer: "Spaceman",
     category: ["modulation", "tremolo", "harmonic trem"],
     madeIn: "USA",
@@ -69,7 +69,7 @@ export let pedals = [
   },
   {
     id: "c487741c-c79f-4899-accb-2f9b5acfa7eb",
-    name: "MUDHONEY",
+    pedalName: "MUDHONEY",
     manufacturer: "T-Rex",
     category: ["overdrive", "distortion"],
     madeIn: "Denmark",
