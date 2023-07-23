@@ -1,6 +1,6 @@
 {
-  "name": "latest",
-  "version": "0.1.0",
+  "name": "fxpedalpalette",
+  "version": "0.0.0-unreleased",
   "private": true,
   "scripts": {
     "dev": "next dev",
