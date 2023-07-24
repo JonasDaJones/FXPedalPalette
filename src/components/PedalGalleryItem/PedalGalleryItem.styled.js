@@ -1,11 +1,8 @@
 import styled from "styled-components";
-export const StyledItem = styled.li`
-border: 2px solid darkslategray;
-border-radius: 5px;
-margin-bottom: 2em;
-5px 5px 15px 5px var(--dark);`;
 
 export const StyledPedalPreview = styled.div`
+border: 1px solid hotpink;
+width: 100%;
 display: grid;
 grid-template-areas:
 "pedalName . category"

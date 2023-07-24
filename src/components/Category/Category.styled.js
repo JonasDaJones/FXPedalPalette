@@ -8,14 +8,13 @@ export const StyledCategoryWrapper = styled.ul`
   padding: 0;
   margin-bottom: 1em;
   background-color: transparent;
-  z-index: 2;
 `;
 
 export const StyledCategory = styled.li`
   justify-content: flex-end;
   height: fit-content;
   width: fit-content;
-  padding: 1px 0.5em;
+  padding: 4px 0.5em;
   margin: 0.3em 0 0 0.5em;
   border-radius: 25px;
   background-color: var(--dark-alternative);
