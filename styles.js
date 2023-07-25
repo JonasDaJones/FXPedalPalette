@@ -1,12 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
+
 export default createGlobalStyle`
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+    margin: 0;
   }
 :root {
+  font-family: 
   --light-font: whitesmoke;
   --dark-font: #0a0908;
   --dark: #0a0908;
