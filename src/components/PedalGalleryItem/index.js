@@ -5,6 +5,7 @@ import Category from "../Category";
 import MyComment from "../MyComment";
 import Tags from "../Tags";
 import PedalImage from "../PedalImage";
+import Link from "next/link";
 export default function GalleryItem({ pedal }) {
   
   return (
@@ -13,7 +14,9 @@ export default function GalleryItem({ pedal }) {
      <Manufacturer manufacturer={pedal.manufacturer}/>
      <Category category={pedal.category}/>
      <MyComment myComment={pedal.myComment}/>
+     <Link href={`/pedal/${pedal.id}`}>
      <PedalImage imagePath={pedal.imagePath} pedalName={pedal.pedalName} />
+     </Link>
      <Tags tags={pedal.tags}/>
       </StyledPedalPreview>
   );
